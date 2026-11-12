@@ -14,6 +14,7 @@ export const site = {
   navFoot: "Independent pass and price data for US cities.",
   nav: [
     { id: "cities", label: "Cities", href: "cities.html" },
+    { id: "passes", label: "Passes", href: "passes.html" },
     { id: "calculator", label: "Calculator", href: "calculator.html" },
     { id: "methodology", label: "Methodology", href: "methodology.html" },
     { id: "about", label: "About", href: "about.html" },
@@ -23,6 +24,7 @@ export const site = {
       title: "Compare",
       links: [
         { label: "Cities", href: "cities.html" },
+        { label: "Passes", href: "passes.html" },
         { label: "Break-even calculator", href: "calculator.html" },
         { label: "Methodology", href: "methodology.html" },
       ],
