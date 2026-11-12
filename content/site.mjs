@@ -37,6 +37,7 @@ export const site = {
       title: "Site",
       links: [
         { label: "About", href: "about.html" },
+        { label: "NYC guides (NYCTrove)", href: "https://nyctrove.com" },
       ],
     },
   ],

@@ -74,6 +74,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
+    <p class="small muted" style="max-width:760px;margin:0 auto 1.6rem;text-align:center">Need the full attraction guides? <a href="https://nyctrove.com/nyc-attraction-price-index.html" rel="noopener">NYCTrove's New York price index</a> has the same checked prices with opening hours and booking advice.</p>
     ${newsletter({ title: "One pass update a month", text: "Price changes and new city coverage, no spam.", source: "new-york" })}
   </div>
 </section>
