@@ -49,7 +49,7 @@ ${pageHero({
   <div class="container">
     ${sectionHead({ eyebrowText: "The warning", title: "Do not buy a pass first", lead: "" })}
     ${callout({ icon: "◆", title: "List the sights before the pass", text: "Write down the paid attractions you would actually visit, add their gate prices, then compare. A pass is a discount on volume — if you would not buy the volume, it is not a discount." })}
-    <p style="margin-top:1.6rem"><a class="btn" href="calculator.html">Open the break-even calculator</a></p>
+    <p style="margin-top:1.6rem"><a class="btn" href="calculator.html">Open the break-even calculator</a> <a class="btn btn--outline" href="go-city-vs-citypass.html" style="margin-left:.6rem">Go City vs CityPASS</a></p>
   </div>
 </section>
 

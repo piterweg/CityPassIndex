@@ -15,6 +15,7 @@ export const site = {
   nav: [
     { id: "cities", label: "Cities", href: "cities.html" },
     { id: "passes", label: "Passes", href: "passes.html" },
+    { id: "data", label: "Data", href: "data.html" },
     { id: "calculator", label: "Calculator", href: "calculator.html" },
     { id: "methodology", label: "Methodology", href: "methodology.html" },
     { id: "about", label: "About", href: "about.html" },
@@ -25,6 +26,8 @@ export const site = {
       links: [
         { label: "Cities", href: "cities.html" },
         { label: "Passes", href: "passes.html" },
+        { label: "Go City vs CityPASS", href: "go-city-vs-citypass.html" },
+        { label: "Data (CSV)", href: "data.html" },
         { label: "Break-even calculator", href: "calculator.html" },
         { label: "Methodology", href: "methodology.html" },
       ],
