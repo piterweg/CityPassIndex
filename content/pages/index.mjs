@@ -47,8 +47,9 @@ ${heroHome({
     ${sectionHead({ eyebrowText: "Cities", title: "Where the index covers", lead: "New York is live. The next cities are in research — we publish when the prices are checked, not before." })}
     <div class="grid grid--3">
       ${mediaCard({ href: "new-york.html", image: img("manhattan-skyline-night.webp"), alt: "The Manhattan skyline at night", kicker: "Live", title: "New York", text: "CityPASS, gate prices and break-even for ten headline attractions.", meta: "10 attractions" })}
-      ${card({ kicker: "In research", title: "Philadelphia", text: "Pass options and gate prices are being checked. No published figures yet.", foot: `<span class="link-arrow">Notify me</span>` })}
-      ${card({ kicker: "In research", title: "Boston", text: "Pass options and gate prices are being checked. No published figures yet.", foot: `<span class="link-arrow">Notify me</span>` })}
+      ${mediaCard({ href: "philadelphia.html", image: img("manhattan-skyline.webp"), alt: "A city skyline", kicker: "Live", title: "Philadelphia", text: "3, 4 or 5 attractions from nine; from $66.", meta: "CityPASS" })}
+      ${mediaCard({ href: "boston.html", image: img("manhattan-skyline-night.webp"), alt: "A city skyline at night", kicker: "Live", title: "Boston", text: "4 attractions from seven; $84", meta: "CityPASS" })}
+      ${mediaCard({ href: "chicago.html", image: img("skyline-window-view.webp"), alt: "A skyline seen through a window", kicker: "Live", title: "Chicago", text: "5 attractions including Shedd and Skydeck; $144", meta: "CityPASS" })}
     </div>
   </div>
 </section>

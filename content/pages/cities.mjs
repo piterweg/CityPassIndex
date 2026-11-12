@@ -16,18 +16,18 @@ ${pageHero({
   crumbs: [{ href: "/", label: "Home" }, { href: "cities.html", label: "Cities" }],
   eyebrowText: "Cities",
   title: "Where the data is live",
-  lead: "We publish a city only when the attraction prices and pass terms are checked against official sellers. No placeholder numbers.",
-  meta: metaItems("1 live", "4 in research", "Checked November 2026"),
+  lead: "We publish a city only when the pass terms are checked against the official operator. New York, Philadelphia, Boston and Chicago are live.",
+  meta: metaItems("4 live", "Washington in research", "Checked November 2026"),
 })}
 
 <section class="section">
   <div class="container">
     ${table({ caption: "Coverage by city", head: ["City", "Pass", "Status", "Page"], rows: [
       ["New York", "CityPASS New York", "Live", "<a href=\"new-york.html\">Open</a>"],
-      ["Philadelphia", "CityPASS Philadelphia", "In research", "—"],
-      ["Boston", "CityPASS Boston", "In research", "—"],
-      ["Chicago", "CityPASS Chicago", "In research", "—"],
-      ["Washington, D.C.", "CityPASS Washington", "In research", "—"],
+      ["Philadelphia", "CityPASS Philadelphia", "Live", "<a href=\"philadelphia.html\">Open</a>"],
+      ["Boston", "CityPASS Boston", "Live", "<a href=\"boston.html\">Open</a>"],
+      ["Chicago", "CityPASS Chicago", "Live", "<a href=\"chicago.html\">Open</a>"],
+      ["Washington, D.C.", "No CityPASS", "Other passes in research", "—"],
     ] })}
   </div>
 </section>

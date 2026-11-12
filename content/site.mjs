@@ -36,6 +36,9 @@ export const site = {
       title: "City",
       links: [
         { label: "New York", href: "new-york.html" },
+        { label: "Philadelphia", href: "philadelphia.html" },
+        { label: "Boston", href: "boston.html" },
+        { label: "Chicago", href: "chicago.html" },
       ],
     },
     {
