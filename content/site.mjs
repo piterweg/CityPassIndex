@@ -9,7 +9,7 @@ export const site = {
   brandMark: "City Pass<span>Index</span>",
   brandTag: "Pass data",
   footerBlurb: "Independent data on city tourist passes, attraction prices and break-even maths.",
-  ogImage: "assets/img/skyline-window-view.webp",
+  ogImage: "assets/img/og-citypassindex.jpg",
   editorialHref: "about.html",
   navFoot: "Independent pass and price data for US cities.",
   nav: [

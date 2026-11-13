@@ -9,7 +9,7 @@ export default {
   description: "Independent comparison of city tourist passes and attraction prices: break-even maths, checked prices and a calculator for New York, with more cities in research.",
   priority: "1.0",
   changefreq: "weekly",
-  ogImage: "assets/img/skyline-window-view.webp",
+  ogImage: "assets/img/og-citypassindex.jpg",
   render: () => `
 ${heroHome({
   image: img("skyline-window-view.webp"),
