@@ -94,6 +94,7 @@ ${ogType === "article" ? `<meta property="article:published_time" content="${sit
 />
 <link rel="stylesheet" href="assets/css/main.css?v=${assetVersion}" />
 <script>document.documentElement.classList.remove("no-js");</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H5P5W3VCM8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
