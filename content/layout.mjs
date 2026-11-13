@@ -63,6 +63,7 @@ function head({ page }) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(page.description)}" />
 <meta name="robots" content="${robots}" />
+<meta name="google-site-verification" content="O7ZQGDtA7fBU-EcliMUk1ICfn-hLT1Vd-qa4PPS56Nc" />
 <link rel="canonical" href="${canonical}" />
 <link rel="alternate" type="application/rss+xml" title="${site.name} — latest guides" href="feed.xml" />
 <meta name="theme-color" content="#0b0d10" />
@@ -103,7 +104,7 @@ ${ogType === "article" ? `<meta property="article:published_time" content="${sit
     ad_personalization: 'denied',
     analytics_storage: 'denied'
   });
-  gtag('config', 'G-XXXXXXXXXX');
+  gtag('config', 'G-H5P5W3VCM8');
 </script>
 <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 0)}
@@ -187,6 +188,14 @@ function footer() {
   </div>
 </footer>
 <a class="to-top" href="#top" aria-label="Back to top" data-to-top>↑</a>
+</div>
+
+<div class="consent-banner" data-consent-banner data-consent-controls hidden>
+  <p>We use Google Analytics to understand which pages are useful. Analytics cookies stay off until you accept. <a href="privacy.html">Privacy policy</a>.</p>
+  <div class="consent-banner__actions">
+    <button class="btn btn--sm" type="button" data-consent-choice="denied">Decline</button>
+    <button class="btn btn--sm" type="button" data-consent-choice="granted">Accept</button>
+  </div>
 </div>
 
 <div class="search-overlay" data-search-overlay hidden>
