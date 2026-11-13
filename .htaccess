@@ -110,7 +110,7 @@ AddDefaultCharset UTF-8
 </IfModule>
 
 <IfModule mod_headers.c>
-  Header always set Link "<https://citypassindex.com/llms.txt>; rel="describedby", <https://citypassindex.com/index.md>; rel="alternate"; type="text/markdown""
+  Header always set Link "<https://citypassindex.com/llms.txt>; rel=describedby, <https://citypassindex.com/index.md>; rel=alternate"
 </IfModule>
 
 <IfModule mod_rewrite.c>
