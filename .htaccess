@@ -101,3 +101,22 @@ AddDefaultCharset UTF-8
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
 </IfModule>
+
+# ---------------------------------------------------------------------------
+# AI agent discovery: Markdown representation, Link headers and content signal
+# ---------------------------------------------------------------------------
+<IfModule mod_mime.c>
+  AddType text/markdown .md
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set Link "<https://citypassindex.com/llms.txt>; rel=\"describedby\", <https://citypassindex.com/index.md>; rel=\"alternate\"; type=\"text/markdown\""
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+  RewriteRule ^$ /index.md [L]
+  RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+  RewriteRule ^index\.html$ /index.md [L]
+</IfModule>

@@ -76,7 +76,7 @@ await writeFile(path.join(root, "sitemap.xml"), sitemap, "utf8");
 // robots.txt
 await writeFile(
   path.join(root, "robots.txt"),
-  `User-agent: *\nAllow: /\n\nSitemap: ${site.baseUrl}/sitemap.xml\n`,
+  `User-agent: *\nAllow: /\nContent-Signal: search=yes, ai-train=no\n\nSitemap: ${site.baseUrl}/sitemap.xml\n`,
   "utf8"
 );
 

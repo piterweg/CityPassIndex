@@ -1,0 +1,24 @@
+# City Pass Index (citypassindex.com)
+
+> Independent comparison of city tourist passes: verified pass prices, attraction gate prices, break-even maths and a calculator. No pay-to-play rankings.
+
+## Key pages
+- https://citypassindex.com/ — start here: pass comparison and calculator
+- https://citypassindex.com/calculator.html — New York CityPASS break-even calculator
+- https://citypassindex.com/passes.html — CityPASS, Go City and New York Pass compared
+- https://citypassindex.com/data.html — downloadable CSV of 15 New York attraction gate prices
+- https://citypassindex.com/cities.html — cities with checked data
+- https://citypassindex.com/new-york.html — New York CityPASS, checked November 2026
+- https://citypassindex.com/philadelphia.html — Philadelphia CityPASS, checked November 2026
+- https://citypassindex.com/boston.html — Boston CityPASS, checked November 2026
+- https://citypassindex.com/chicago.html — Chicago CityPASS, checked November 2026
+- https://citypassindex.com/go-city-vs-citypass.html — Go City Explorer vs CityPASS
+- https://citypassindex.com/methodology.html — how prices are checked
+- https://citypassindex.com/about.html — who runs the site
+- https://citypassindex.com/contact.html — contact
+
+## Content policy
+- Prices are adult "from" rates checked against official sellers; each page states its checked date.
+- Cities without verified prices are marked "in research" rather than given placeholder numbers.
+- Downloadable data: https://citypassindex.com/data.html (CC BY 4.0, attribution City Pass Index).
+- Content signal: search=yes, ai-train=no.

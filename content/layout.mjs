@@ -22,6 +22,20 @@ function head({ page }) {
     "@type": "Organization",
     name: site.name,
     url: site.baseUrl,
+    email: site.email,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "New York",
+      addressRegion: "NY",
+      addressCountry: "US",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: site.email,
+      availableLanguage: "English",
+    },
+    sameAs: ["https://github.com/piterweg/CityPassIndex"],
     logo: {
       "@type": "ImageObject",
       url: `${site.baseUrl}/${site.ogImage || "assets/img/og-nyctrove.jpg"}`,
@@ -182,6 +196,7 @@ function footer() {
         <a href="about.html">About</a>
         <a href="privacy.html">Privacy</a>
         <a href="contact.html">Contact</a>
+        <a href="mailto:hello@citypassindex.com">Email us</a>
         <a href="credits.html">Credits</a>
         <a href="sitemap.xml">Sitemap</a>
       </nav>
@@ -211,7 +226,8 @@ function footer() {
   </div>
 </div>
 <script src="assets/js/main.js?v=${assetVersion}" defer></script>
-<script src="assets/js/search.js?v=${assetVersion}" defer></script>`;
+<script src="assets/js/search.js?v=${assetVersion}" defer></script>
+<script src="assets/js/webmcp.js?v=${assetVersion}" defer></script>`;
 }
 
 export function renderPage({ page, body }) {

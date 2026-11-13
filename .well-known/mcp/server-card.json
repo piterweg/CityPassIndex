@@ -1,0 +1,15 @@
+{
+  "name": "citypassindex",
+  "version": "1.0.0",
+  "description": "City Pass Index publishes verified tourist-pass prices, break-even maths and downloadable attraction price data for US cities.",
+  "homepage": "https://citypassindex.com/",
+  "endpoint": "https://citypassindex.com/llms.txt",
+  "transport": {
+    "type": "http",
+    "url": "https://citypassindex.com/llms.txt"
+  },
+  "capabilities": {},
+  "tools": [],
+  "contact": "mailto:hello@citypassindex.com",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}

@@ -10,6 +10,47 @@ export default {
   priority: "1.0",
   changefreq: "weekly",
   ogImage: "assets/img/og-citypassindex.jpg",
+  jsonLd: [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is a tourist pass worth it?",
+          acceptedAnswer: { "@type": "Answer", text: "Only if the attractions you would visit cost more at the gate than the pass. The calculator does the maths with checked prices." },
+        },
+        {
+          "@type": "Question",
+          name: "Why only some cities?",
+          acceptedAnswer: { "@type": "Answer", text: "A price is only useful with a date and a source. New York, Philadelphia, Boston and Chicago are checked; other cities are marked in research." },
+        },
+        {
+          "@type": "Question",
+          name: "Do you earn commission?",
+          acceptedAnswer: { "@type": "Answer", text: "Not at launch. If that changes, affected pages will disclose it before the link." },
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "Cities with checked CityPASS data",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "New York", url: "https://citypassindex.com/new-york.html" },
+        { "@type": "ListItem", position: 2, name: "Philadelphia", url: "https://citypassindex.com/philadelphia.html" },
+        { "@type": "ListItem", position: 3, name: "Boston", url: "https://citypassindex.com/boston.html" },
+        { "@type": "ListItem", position: 4, name: "Chicago", url: "https://citypassindex.com/chicago.html" },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://citypassindex.com/" },
+      ],
+    },
+  ],
   render: () => `
 ${heroHome({
   image: img("skyline-window-view.webp"),

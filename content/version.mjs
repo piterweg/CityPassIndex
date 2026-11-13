@@ -15,6 +15,7 @@ const files = [
   "assets/css/main.css",
   "assets/js/main.js",
   "assets/js/search.js",
+  "assets/js/webmcp.js",
   "assets/js/calculator.js",
 ];
 
