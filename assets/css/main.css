@@ -3290,6 +3290,51 @@ body.search-open {
   .brand__tag { display: none; }
   .brand__logo { width: 32px; height: 32px; }
 }
+
+.calc__controls {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 0.8rem;
+  margin: 1.4rem 0 1.2rem;
+}
+
+.calc__field {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.calc__field select,
+.calc__field input {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(28, 26, 23, 0.16);
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.calc__field select:focus,
+.calc__field input:focus {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+}
+
+.calc__city-head h3 { margin: 0 0 0.3rem; font-size: var(--step-1); }
+.calc__city-head p { margin: 0 0 0.6rem; font-size: 0.88rem; }
+
+@media (max-width: 640px) {
+  .calc__controls { grid-template-columns: 1fr; }
+  .calc__grid { grid-template-columns: 1fr; }
+}
+
 /* Print */
 @media print {
   .site-header,
