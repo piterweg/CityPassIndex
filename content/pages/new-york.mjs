@@ -75,7 +75,7 @@ ${pageHero({
 <section class="section">
   <div class="container">
     <p class="small muted" style="max-width:760px;margin:0 auto 1.6rem;text-align:center">Need the full attraction guides? <a href="https://nyctrove.com/nyc-attraction-price-index.html" rel="noopener">NYCTrove's New York price index</a> has the same checked prices with opening hours and booking advice.</p>
-    ${relatedGuides({ links: [{ kicker: "Compare", title: "Pass comparison", href: "passes.html", text: "CityPASS, Go City and New York Pass side by side." }, { kicker: "Comparison", title: "Go City vs CityPASS", href: "go-city-vs-citypass.html", text: "Which pass wins for your list of sights." }, { kicker: "Tool", title: "Savings calculator", href: "calculator.html", text: "Run the numbers for your own five attractions." }] })}
+    ${relatedGuides({ links: [{ kicker: "Review", title: "CityPASS review", href: "new-york-citypass.html", text: "What the five-attraction bundle covers." }, { kicker: "Review", title: "Go City review", href: "new-york-go-city.html", text: "Explorer vs All-Inclusive, compared." }, { kicker: "Decision", title: "Is a pass worth it?", href: "new-york-pass-worth-it.html", text: "Three trip scenarios with real prices." }, { kicker: "Guide", title: "Attraction prices", href: "new-york-attractions.html", text: "Gate prices and pass coverage." }] })}
 
 ${newsletter({ title: "One pass update a month", text: "Price changes and new city coverage, no spam.", source: "new-york" })}
   </div>

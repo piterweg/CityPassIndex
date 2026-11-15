@@ -17,6 +17,10 @@ Independent comparison of city tourist passes: verified pass prices, attraction 
 
 ## Checked cities (November 2026)
 - New York: https://citypassindex.com/new-york.html — CityPASS $149 + $2, 5 of 10 attractions, 9 days.
+- New York CityPASS review: https://citypassindex.com/new-york-citypass.html
+- Go City New York: https://citypassindex.com/new-york-go-city.html
+- Is a pass worth it: https://citypassindex.com/new-york-pass-worth-it.html
+- Attraction prices: https://citypassindex.com/new-york-attractions.html
 - Philadelphia: https://citypassindex.com/philadelphia.html — 3/4/5 attractions, $66/$84/$98.
 - Boston: https://citypassindex.com/boston.html — 4 attractions, $84.
 - Chicago: https://citypassindex.com/chicago.html — 5 attractions, $144.

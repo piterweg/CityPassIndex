@@ -67,6 +67,30 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://citypassindex.com/new-york-attractions.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/new-york-citypass.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/new-york-go-city.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/new-york-pass-worth-it.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://citypassindex.com/new-york.html</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
