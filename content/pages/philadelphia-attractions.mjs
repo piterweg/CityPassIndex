@@ -32,7 +32,7 @@ ${pageHero({
       head: ["Attraction", "Adult gate price", "Status"],
       rows: [
         ["The Franklin Institute", "from $23", "Verified"],
-        ["Adventure Aquarium", "in research", "In research"],
+        ["Adventure Aquarium", "from $27.99", "Verified"],
         ["Philadelphia Zoo", "in research", "In research"],
         ["Big Bus / Trolley Works", "in research", "In research"],
         ["Eastern State Penitentiary", "$19", "Verified"],

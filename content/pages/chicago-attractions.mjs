@@ -34,7 +34,7 @@ ${pageHero({
         ["Shedd Aquarium", "in research", "In research"],
         ["Skydeck Chicago", "in research", "In research"],
         ["Shoreline Sightseeing", "in research", "In research"],
-        ["Field Museum", "in research", "In research"],
+        ["Field Museum", "from $30", "Verified"],
         ["360 Chicago", "from $35", "Verified"],
         ["Griffin Museum of Science and Industry", "in research", "In research"],
         ["Art Institute of Chicago", "in research", "In research"],

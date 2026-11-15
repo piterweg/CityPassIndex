@@ -34,10 +34,10 @@ ${pageHero({
         ["New England Aquarium", "from $34.95", "Verified"],
         ["Museum of Science", "in research", "In research"],
         ["Boston Harbor City Cruises", "in research", "In research"],
-        ["View Boston", "in research", "In research"],
+        ["View Boston", "$48", "Verified"],
         ["Franklin Park Zoo", "in research", "In research"],
         ["Harvard Museum of Natural History", "in research", "In research"],
-        ["Museum of Fine Arts", "in research", "In research"]
+        ["Museum of Fine Arts", "$30", "Verified"]
       ],
     })}
   </div>
