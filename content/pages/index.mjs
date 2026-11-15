@@ -85,12 +85,63 @@ ${heroHome({
 
 <section class="section">
   <div class="container">
-    ${sectionHead({ eyebrowText: "Cities", title: "Where the index covers", lead: "New York is live. The next cities are in research — we publish when the prices are checked, not before." })}
-    <div class="grid grid--3">
-      ${mediaCard({ href: "new-york.html", image: img("manhattan-skyline-night.webp"), alt: "The Manhattan skyline at night", kicker: "Live", title: "New York", text: "CityPASS, gate prices and break-even for ten headline attractions.", meta: "10 attractions" })}
-      ${mediaCard({ href: "philadelphia.html", image: img("philadelphia-skyline.webp"), alt: "The Philadelphia skyline seen across the Schuylkill River", kicker: "Live", title: "Philadelphia", text: "3, 4 or 5 attractions from nine; from $66.", meta: "CityPASS" })}
-      ${mediaCard({ href: "boston.html", image: img("boston-skyline.webp"), alt: "The Boston skyline and waterfront", kicker: "Live", title: "Boston", text: "4 attractions from seven; $84", meta: "CityPASS" })}
-      ${mediaCard({ href: "chicago.html", image: img("chicago-skyline.webp"), alt: "The Chicago River and skyline", kicker: "Live", title: "Chicago", text: "5 attractions including Shedd and Skydeck; $144", meta: "CityPASS" })}
+    ${sectionHead({ eyebrowText: "Cities", title: "Four cities, checked", lead: "Pass prices verified against the operator; gate prices verified for New York and being checked for the others. Each page states exactly what is known." })}
+    <div class="city-grid">
+      <a class="city-tile" href="new-york.html">
+        <img src="${img("manhattan-skyline-night.webp")}" alt="The Manhattan skyline at night" width="800" height="500" loading="lazy" />
+        <span class="city-tile__code">NYC</span>
+        <span class="city-tile__body">
+          <span class="city-tile__name">New York</span>
+          <span class="city-tile__meta">CityPASS from $151 · save up to 51%</span>
+        </span>
+      </a>
+      <a class="city-tile" href="philadelphia.html">
+        <img src="${img("philadelphia-skyline.webp")}" alt="The Philadelphia skyline seen across the Schuylkill River" width="800" height="500" loading="lazy" />
+        <span class="city-tile__code">PHL</span>
+        <span class="city-tile__body">
+          <span class="city-tile__name">Philadelphia</span>
+          <span class="city-tile__meta">CityPASS from $66 · save up to 55%</span>
+        </span>
+      </a>
+      <a class="city-tile" href="boston.html">
+        <img src="${img("boston-skyline.webp")}" alt="The Boston skyline and waterfront" width="800" height="500" loading="lazy" />
+        <span class="city-tile__code">BOS</span>
+        <span class="city-tile__body">
+          <span class="city-tile__name">Boston</span>
+          <span class="city-tile__meta">CityPASS from $84 · save up to 45%</span>
+        </span>
+      </a>
+      <a class="city-tile" href="chicago.html">
+        <img src="${img("chicago-skyline.webp")}" alt="The Chicago River and skyline" width="800" height="500" loading="lazy" />
+        <span class="city-tile__code">CHI</span>
+        <span class="city-tile__body">
+          <span class="city-tile__name">Chicago</span>
+          <span class="city-tile__meta">CityPASS $144 · save up to 50%</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-paper-2">
+  <div class="container">
+    ${sectionHead({ eyebrowText: "Process", title: "From wishlist to verdict", lead: "The same three steps work for every city on the site." })}
+    <div class="steps">
+      <div class="step">
+        <span class="step__num">1</span>
+        <h3>List the paid sights</h3>
+        <p>Write down what you would actually visit, not what a pass includes.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">2</span>
+        <h3>Add the gate prices</h3>
+        <p>Our calculator uses checked prices where we have them and lets you enter the rest.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">3</span>
+        <h3>Buy the pass — or skip it</h3>
+        <p>If the pass costs more than your list, we say so. That is the whole point.</p>
+      </div>
     </div>
   </div>
 </section>
