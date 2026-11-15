@@ -32,7 +32,7 @@ ${pageHero({
       head: ["Attraction", "Adult gate price", "Status"],
       rows: [
         ["New England Aquarium", "from $34.95", "Verified"],
-        ["Museum of Science", "in research", "In research"],
+        ["Museum of Science", "$33", "Verified"],
         ["Boston Harbor City Cruises", "in research", "In research"],
         ["View Boston", "$48", "Verified"],
         ["Franklin Park Zoo", "in research", "In research"],

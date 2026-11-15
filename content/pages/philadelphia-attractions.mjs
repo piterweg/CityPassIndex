@@ -34,12 +34,12 @@ ${pageHero({
         ["The Franklin Institute", "from $23", "Verified"],
         ["Adventure Aquarium", "from $27.99", "Verified"],
         ["Philadelphia Zoo", "in research", "In research"],
-        ["Big Bus / Trolley Works", "in research", "In research"],
+        ["Big Bus / Trolley Works", "from $54", "Verified"],
         ["Eastern State Penitentiary", "$19", "Verified"],
-        ["Battleship New Jersey", "in research", "In research"],
+        ["Battleship New Jersey", "$35", "Verified"],
         ["Museum of the American Revolution", "$25 online", "Verified"],
         ["National Constitution Center", "$24.95", "Verified"],
-        ["Barnes Foundation", "in research", "In research"]
+        ["Barnes Foundation", "$30", "Verified"]
       ],
     })}
   </div>

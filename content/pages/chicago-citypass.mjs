@@ -49,7 +49,7 @@ ${pageHero({
         ["Field Museum", "from $30", "Verified"],
         ["360 Chicago", "from $35", "Verified"],
         ["Griffin Museum of Science and Industry", "in research", "In research"],
-        ["Art Institute of Chicago", "in research", "In research"],
+        ["Art Institute of Chicago", "$32", "Verified"],
         ["Adler Planetarium", "from $25", "Verified"]
       ],
     })}
