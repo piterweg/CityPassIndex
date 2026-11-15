@@ -1,4 +1,4 @@
-import { pageHero, sectionHead, table, callout, faq, newsletter, img, metaItems } from "../components.mjs";
+import { pageHero, sectionHead, table, callout, faq, newsletter, relatedGuides, img, metaItems } from "../components.mjs";
 
 export default {
   path: "new-york.html",
@@ -75,7 +75,9 @@ ${pageHero({
 <section class="section">
   <div class="container">
     <p class="small muted" style="max-width:760px;margin:0 auto 1.6rem;text-align:center">Need the full attraction guides? <a href="https://nyctrove.com/nyc-attraction-price-index.html" rel="noopener">NYCTrove's New York price index</a> has the same checked prices with opening hours and booking advice.</p>
-    ${newsletter({ title: "One pass update a month", text: "Price changes and new city coverage, no spam.", source: "new-york" })}
+    ${relatedGuides({ links: [{ kicker: "Compare", title: "Pass comparison", href: "passes.html", text: "CityPASS, Go City and New York Pass side by side." }, { kicker: "Comparison", title: "Go City vs CityPASS", href: "go-city-vs-citypass.html", text: "Which pass wins for your list of sights." }, { kicker: "Tool", title: "Savings calculator", href: "calculator.html", text: "Run the numbers for your own five attractions." }] })}
+
+${newsletter({ title: "One pass update a month", text: "Price changes and new city coverage, no spam.", source: "new-york" })}
   </div>
 </section>
 `,

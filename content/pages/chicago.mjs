@@ -1,4 +1,4 @@
-import { pageHero, sectionHead, table, callout, faq, newsletter, ctaBand, img, metaItems } from "../components.mjs";
+import { pageHero, sectionHead, table, callout, faq, newsletter, relatedGuides, ctaBand, img, metaItems } from "../components.mjs";
 
 export default {
   path: "chicago.html",
@@ -77,7 +77,9 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${newsletter({ title: "One pass update a month", text: "Price changes and new city coverage, no spam.", source: "chicago" })}
+    ${relatedGuides({ links: [{ kicker: "Compare", title: "Pass comparison", href: "passes.html", text: "CityPASS, Go City and New York Pass compared." }, { kicker: "Tool", title: "Break-even calculator", href: "calculator.html", text: "See when a pass stops paying off." }, { kicker: "Index", title: "All cities", href: "cities.html", text: "Which cities have checked data." }] })}
+
+${newsletter({ title: "One pass update a month", text: "Price changes and new city coverage, no spam.", source: "chicago" })}
   </div>
 </section>
 

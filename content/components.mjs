@@ -248,3 +248,22 @@ export const metaItems = (...items) =>
 export function verifiedNote({ date = "2 November 2026", scope = "Prices, opening hours and transport details" } = {}) {
   return `<p class="verified-note"><span class="verified-note__check" aria-hidden="true">✓</span><span><strong>Checked ${date}.</strong> ${scope} were verified against official sources. Things change — confirm before you book. <a href="editorial.html">How we check</a>.</span></p>`;
 }
+
+export function relatedGuides({ title = "Related guides", links }) {
+  return `<section class="section bg-paper-2">
+  <div class="container">
+    ${sectionHead({ eyebrowText: "Keep reading", title, lead: "" })}
+    <div class="grid grid--3">
+      ${links
+        .map(
+          (link) => `<a class="card" href="${link.href}">
+        <span class="card__kicker">${link.kicker || "Guide"}</span>
+        <h3>${link.title}</h3>
+        <p>${link.text || ""}</p>
+      </a>`
+        )
+        .join("")}
+    </div>
+  </div>
+</section>`;
+}
