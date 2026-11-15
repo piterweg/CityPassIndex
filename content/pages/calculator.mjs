@@ -143,7 +143,7 @@ ${pageHero({
   crumbs: [{ href: "/", label: "Home" }, { href: "calculator.html", label: "Calculator" }],
   eyebrowText: "Calculator",
   title: "Would the pass actually save you money?",
-  lead: "Pick a city, the number of adults and the attractions you would visit. New York has verified gate prices; the other cities show the break-even per attraction until their gate prices are checked.",
+  lead: "Pick a city, the number of adults and the attractions you would visit. New York has verified gate prices; for the other cities, enter the gate price you see on the official ticket page and the calculator takes it from there.",
   meta: metaItems("4 cities", "Adults + total", "Savings in $ and %", "No email required"),
 })}
 
@@ -152,7 +152,7 @@ ${pageHero({
     <div class="calc" data-calc>
       <div class="calc__head">
         <h2>Build your list</h2>
-        <p class="muted">Pass prices are adult prices checked November 2026. Gate prices are adult “from” prices and can rise with dynamic pricing.</p>
+        <p class="muted">Pass prices are adult prices checked November 2026. New York gate prices are verified; for Philadelphia, Boston and Chicago, type the gate price you see on the official ticket page — we do not publish unverified prices.</p>
       </div>
 
       <div class="calc__controls">
@@ -181,9 +181,11 @@ ${pageHero({
             ${city.attractions
               .map(
                 (attraction) =>
-                  `<label class="calc__option"><input type="checkbox" data-name="${attraction.name}"${
+                  `<label class="calc__option calc__option--manual"><input type="checkbox" data-name="${attraction.name}"${
                     attraction.value ? ` value="${attraction.value}"` : ""
-                  } /> <span>${attraction.name} <strong>${attraction.priceLabel}</strong></span></label>`
+                  } /> <span>${attraction.name} <strong>${attraction.priceLabel}</strong></span>${
+                    attraction.value ? "" : `<input class="calc__gate" type="number" inputmode="decimal" min="0" step="0.01" placeholder="$ gate" aria-label="Gate price for ${attraction.name}" data-gate disabled />`
+                  }</label>`
               )
               .join("")}
           </fieldset>
@@ -213,7 +215,7 @@ ${pageHero({
   <div class="container">
     ${sectionHead({ eyebrowText: "Questions", title: "Calculator questions", lead: "" })}
     ${faq([
-      { q: "Why only New York shows a full saving?", a: "<p>Because New York is the only city where every attraction gate price has been checked. For Philadelphia, Boston and Chicago the pass price and inclusions are verified; the size of the saving depends on gate prices we are still checking.</p>" },
+      { q: "Why do I have to enter prices for some cities?", a: "<p>Because we only publish gate prices we have checked ourselves. New York is fully checked; for Philadelphia, Boston and Chicago the pass price is verified, and you can type the gate price you see on the official ticket page to get the full saving.</p>" },
       { q: "Does the calculator include children?", a: "<p>No. It uses adult prices and a number of adults. Child passes are cheaper and the break-even is usually lower, so do not reuse the adult result for a family with children.</p>" },
       { q: "What if I want more attractions than the pass covers?", a: "<p>Then the pass covers its limit and you pay the gate price for the extras. Add those extras separately to compare honestly.</p>" },
       { q: "When are the prices checked?", a: "<p>Pass prices and inclusions were checked in November 2026. Gate prices can change with dynamic pricing, especially at weekends and sunset slots.</p>" },

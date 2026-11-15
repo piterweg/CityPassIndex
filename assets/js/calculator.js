@@ -18,9 +18,23 @@
     return parseFloat(block.dataset.pass) || 0;
   };
 
+  const gateFor = (box) => {
+    const attr = box.getAttribute("value");
+    if (attr !== null) return parseFloat(attr) || 0;
+    const label = box.closest(".calc__option");
+    const input = label ? label.querySelector("[data-gate]") : null;
+    return input ? parseFloat(input.value) || 0 : 0;
+  };
+
   const resetBlock = (block) => {
     block.querySelectorAll("input[type=checkbox]").forEach((box) => {
       box.checked = false;
+      const label = box.closest(".calc__option");
+      const gate = label ? label.querySelector("[data-gate]") : null;
+      if (gate) {
+        gate.disabled = true;
+        gate.value = "";
+      }
     });
   };
 
@@ -57,10 +71,11 @@
     const perPersonPass = passPrice(block, count);
     const totalPass = perPersonPass * people;
     const names = picked.map((box) => box.getAttribute("data-name"));
+    const gatePerPerson = picked.reduce((sum, box) => sum + gateFor(box), 0);
+    const entered = picked.filter((box) => gateFor(box) > 0).length;
 
-    if (block.dataset.city === "new-york") {
-      const gate = picked.reduce((sum, box) => sum + parseFloat(box.value || "0"), 0);
-      const totalGate = gate * people;
+    if (entered === count) {
+      const totalGate = gatePerPerson * people;
       const diff = totalGate - totalPass;
       const percent = totalGate > 0 ? (diff / totalGate) * 100 : 0;
       const verdict =
@@ -69,20 +84,20 @@
           : diff < 0
             ? `<p class="calc__verdict calc__verdict--lose">Buying direct is cheaper by ${money(Math.abs(diff))}${people > 1 ? " for " + people + " adults" : ""} (${Math.abs(percent).toFixed(0)}%)</p>`
             : `<p class="calc__verdict">Break-even: the pass and gate prices are the same.</p>`;
-
       out.innerHTML =
         verdict +
-        `<p class="muted">Your ${count}: ${names.join(", ")}. Gate total ${money(totalGate)} vs CityPASS ${money(totalPass)}${people > 1 ? " for " + people + " adults" : ""}.</p>` +
-        `<p class="muted">Gate price per adult ${money(gate)}. The pass costs ${money(perPersonPass)} per adult, so the pass wins when your list is above that line.</p>`;
+        `<p class="muted">Your ${count}: ${names.join(", ")}. Gate total ${money(totalGate)} vs ${money(totalPass)}${people > 1 ? " for " + people + " adults" : ""}.</p>` +
+        `<p class="muted">Gate price per adult ${money(gatePerPerson)}; pass ${money(perPersonPass)} per adult.</p>`;
       return;
     }
 
-    const cityName = block.dataset.city === "philadelphia" ? "Philadelphia" : block.dataset.city === "boston" ? "Boston" : "Chicago";
     const perAttraction = perPersonPass / count;
+    const cityName = block.dataset.label || block.dataset.city;
     const cityPage = block.dataset.city + ".html";
+    const missing = count - entered;
     out.innerHTML =
       `<p class="calc__verdict">Your ${count} attractions cost ${money(totalPass)} in the pass${people > 1 ? " for " + people + " adults" : ""}</p>` +
-      `<p class="muted">That is about ${money(perAttraction)} per attraction. Because individual gate prices for ${cityName} are still being checked, we do not show a made-up saving: compare that figure with what you would pay at the gate.</p>` +
+      `<p class="muted">That is about ${money(perAttraction)} per attraction. Enter a gate price for ${missing} more attraction${missing === 1 ? "" : "s"} to see the full saving${entered ? ` (already entered: ${money(gatePerPerson)} per adult)` : ""}, or compare that figure with what you would pay at the gate.</p>` +
       `<p class="muted">Your list: ${names.join(", ")}. <a href="${cityPage}">See what the pass includes in ${cityName}</a> — or read the <a href="methodology.html">methodology</a>.</p>`;
   };
 
@@ -94,8 +109,14 @@
         const max = parseInt(block.dataset.max, 10);
         const checked = [...block.querySelectorAll("input[type=checkbox]")].filter((item) => item.checked);
         if (checked.length > max) box.checked = false;
+        const label = box.closest(".calc__option");
+        const gate = label ? label.querySelector("[data-gate]") : null;
+        if (gate) gate.disabled = !box.checked;
         update();
       });
+    });
+    block.querySelectorAll("[data-gate]").forEach((gate) => {
+      gate.addEventListener("input", update);
     });
   });
 
