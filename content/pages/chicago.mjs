@@ -8,11 +8,11 @@ export default {
   description: "Chicago CityPASS price and inclusions: five attractions including Shedd Aquarium and Skydeck, 9-day validity, prices checked November 2026.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/skyline-window-view.webp",
+  ogImage: "assets/img/chicago-skyline.webp",
   render: () => `
 ${pageHero({
-  image: img("skyline-window-view.webp"),
-  alt: "A city skyline seen through a tall window",
+  image: img("chicago-skyline.webp"),
+  alt: "The Chicago River and skyline",
   crumbs: [{ href: "/", label: "Home" }, { href: "cities.html", label: "Cities" }, { href: "chicago.html", label: "Chicago" }],
   eyebrowText: "Chicago",
   title: "Chicago CityPASS, checked",

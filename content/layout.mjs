@@ -23,12 +23,7 @@ function head({ page }) {
     name: site.name,
     url: site.baseUrl,
     email: site.email,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "New York",
-      addressRegion: "NY",
-      addressCountry: "US",
-    },
+    areaServed: "United States",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
@@ -71,6 +66,34 @@ function head({ page }) {
     organisation,
     ...pageNodes,
   ];
+
+  if (page.path !== "index.html") {
+    const hasBreadcrumb = jsonLd.some((node) => node && node["@type"] === "BreadcrumbList");
+    if (!hasBreadcrumb) {
+      jsonLd.push({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: site.baseUrl },
+          { "@type": "ListItem", position: 2, name: page.title, item: pageUrl },
+        ],
+      });
+    }
+    if (page.navSection === "cities") {
+      jsonLd.push({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: page.title,
+        description: page.description,
+        image: articleImage,
+        author: { ...organisation },
+        publisher: { ...organisation },
+        mainEntityOfPage: pageUrl,
+        datePublished: buildDate,
+        dateModified: buildDate,
+      });
+    }
+  }
 
   return `<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

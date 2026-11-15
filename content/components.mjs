@@ -208,7 +208,7 @@ export function newsletter({ title, text, source = "footer" }) {
         <input id="newsletter-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required />
         <button class="btn" type="submit">Subscribe</button>
       </div>
-      <p class="consent">No spam, ever. One useful New York email a week, and a free skyline photo guide when you join. Read our <a href="about.html">privacy policy</a>.</p>
+      <p class="consent">No spam, ever. One pass update a month and the occasional price change. Read our <a href="privacy.html">privacy policy</a>.</p>
       <p class="form-message" role="status" aria-live="polite"></p>
     </form>
   </div>

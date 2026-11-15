@@ -59,7 +59,7 @@ ${heroHome({
   title: "Tourist passes, <em>without the sales pitch.</em>",
   lead: "Passes are sold as savings and priced to make the maths feel obvious. We check the gate prices, run the break-even and tell you when buying direct is cheaper.",
   actions: `${btn({ href: "calculator.html", label: "Open the calculator" })}${btn({ href: "cities.html", label: "See cities", variant: "ghost" })}`,
-  meta: metaItems("<strong>1</strong> city live", "<strong>10</strong> attractions checked", "<strong>CSV</strong> data", "<strong>Checked</strong> November 2026"),
+  meta: metaItems("<strong>4</strong> cities live", "<strong>34</strong> attractions covered", "<strong>CSV</strong> data", "<strong>Checked</strong> November 2026"),
 })}
 
 <section class="section">
@@ -88,9 +88,9 @@ ${heroHome({
     ${sectionHead({ eyebrowText: "Cities", title: "Where the index covers", lead: "New York is live. The next cities are in research — we publish when the prices are checked, not before." })}
     <div class="grid grid--3">
       ${mediaCard({ href: "new-york.html", image: img("manhattan-skyline-night.webp"), alt: "The Manhattan skyline at night", kicker: "Live", title: "New York", text: "CityPASS, gate prices and break-even for ten headline attractions.", meta: "10 attractions" })}
-      ${mediaCard({ href: "philadelphia.html", image: img("manhattan-skyline.webp"), alt: "A city skyline", kicker: "Live", title: "Philadelphia", text: "3, 4 or 5 attractions from nine; from $66.", meta: "CityPASS" })}
-      ${mediaCard({ href: "boston.html", image: img("manhattan-skyline-night.webp"), alt: "A city skyline at night", kicker: "Live", title: "Boston", text: "4 attractions from seven; $84", meta: "CityPASS" })}
-      ${mediaCard({ href: "chicago.html", image: img("skyline-window-view.webp"), alt: "A skyline seen through a window", kicker: "Live", title: "Chicago", text: "5 attractions including Shedd and Skydeck; $144", meta: "CityPASS" })}
+      ${mediaCard({ href: "philadelphia.html", image: img("philadelphia-skyline.webp"), alt: "The Philadelphia skyline seen across the Schuylkill River", kicker: "Live", title: "Philadelphia", text: "3, 4 or 5 attractions from nine; from $66.", meta: "CityPASS" })}
+      ${mediaCard({ href: "boston.html", image: img("boston-skyline.webp"), alt: "The Boston skyline and waterfront", kicker: "Live", title: "Boston", text: "4 attractions from seven; $84", meta: "CityPASS" })}
+      ${mediaCard({ href: "chicago.html", image: img("chicago-skyline.webp"), alt: "The Chicago River and skyline", kicker: "Live", title: "Chicago", text: "5 attractions including Shedd and Skydeck; $144", meta: "CityPASS" })}
     </div>
   </div>
 </section>
@@ -100,7 +100,7 @@ ${heroHome({
     ${sectionHead({ eyebrowText: "Questions", title: "Pass questions", lead: "" })}
     ${faq([
       { q: "Is a tourist pass worth it?", a: "<p>Only if the attractions you would genuinely visit cost more at the gate than the pass. The calculator does that maths with checked prices.</p>" },
-      { q: "Why only New York so far?", a: "<p>Because a price is only useful with a date and a source. New York is fully checked; other cities will be published when their prices are verified.</p>" },
+      { q: "Which cities are checked?", a: "<p>New York has verified gate prices and pass maths. Philadelphia, Boston and Chicago have verified CityPASS prices and inclusions; their individual gate prices are still being checked and are labelled as such.</p>" },
       { q: "Do you earn commission?", a: "<p>Not at launch. If that changes, every affected page will say so before the link.</p>" },
     ])}
   </div>

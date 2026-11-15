@@ -8,11 +8,11 @@ export default {
   description: "Philadelphia CityPASS prices and inclusions: 3, 4 or 5 attractions, 9-day validity, adult and child prices checked November 2026.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/skyline-window-view.webp",
+  ogImage: "assets/img/philadelphia-skyline.webp",
   render: () => `
 ${pageHero({
-  image: img("skyline-window-view.webp"),
-  alt: "A city skyline seen through a tall window",
+  image: img("philadelphia-skyline.webp"),
+  alt: "The Philadelphia skyline seen across the Schuylkill River",
   crumbs: [{ href: "/", label: "Home" }, { href: "cities.html", label: "Cities" }, { href: "philadelphia.html", label: "Philadelphia" }],
   eyebrowText: "Philadelphia",
   title: "Philadelphia CityPASS, checked",

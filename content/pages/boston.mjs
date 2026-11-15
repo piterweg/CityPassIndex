@@ -8,11 +8,11 @@ export default {
   description: "Boston CityPASS price and inclusions: four attractions from seven, 9-day validity, adult and child prices checked November 2026.",
   priority: "0.8",
   changefreq: "monthly",
-  ogImage: "assets/img/skyline-window-view.webp",
+  ogImage: "assets/img/boston-skyline.webp",
   render: () => `
 ${pageHero({
-  image: img("skyline-window-view.webp"),
-  alt: "A city skyline seen through a tall window",
+  image: img("boston-skyline.webp"),
+  alt: "The Boston skyline and waterfront",
   crumbs: [{ href: "/", label: "Home" }, { href: "cities.html", label: "Cities" }, { href: "boston.html", label: "Boston" }],
   eyebrowText: "Boston",
   title: "Boston CityPASS, checked",
