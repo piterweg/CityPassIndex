@@ -34,16 +34,16 @@ const cityBlocks = [
     max: 5,
     note: "Choose 3, 4 or 5 attractions; the price changes with the number you pick.",
     attractions: [
-      "The Franklin Institute",
-      "Adventure Aquarium",
-      "Philadelphia Zoo",
-      "Big Bus / Trolley Works",
-      "Eastern State Penitentiary",
-      "Battleship New Jersey",
-      "Museum of the American Revolution",
-      "National Constitution Center",
-      "Barnes Foundation",
-    ].map((name) => ({ name, priceLabel: "gate price in research" })),
+      { name: "The Franklin Institute", value: 23, priceLabel: "from $23" },
+      { name: "Adventure Aquarium", priceLabel: "gate price in research" },
+      { name: "Philadelphia Zoo", priceLabel: "gate price in research" },
+      { name: "Big Bus / Trolley Works", priceLabel: "gate price in research" },
+      { name: "Eastern State Penitentiary", value: 19, priceLabel: "$19" },
+      { name: "Battleship New Jersey", priceLabel: "gate price in research" },
+      { name: "Museum of the American Revolution", value: 25, priceLabel: "$25 online" },
+      { name: "National Constitution Center", value: 24.95, priceLabel: "$24.95" },
+      { name: "Barnes Foundation", priceLabel: "gate price in research" },
+    ],
   },
   {
     id: "boston",
@@ -54,14 +54,14 @@ const cityBlocks = [
     max: 4,
     note: "4 attractions from 7, valid 9 days.",
     attractions: [
-      "New England Aquarium",
-      "Museum of Science",
-      "Boston Harbor City Cruises",
-      "View Boston",
-      "Franklin Park Zoo",
-      "Harvard Museum of Natural History",
-      "Museum of Fine Arts",
-    ].map((name) => ({ name, priceLabel: "gate price in research" })),
+      { name: "New England Aquarium", value: 34.95, priceLabel: "from $34.95" },
+      { name: "Museum of Science", priceLabel: "gate price in research" },
+      { name: "Boston Harbor City Cruises", priceLabel: "gate price in research" },
+      { name: "View Boston", priceLabel: "gate price in research" },
+      { name: "Franklin Park Zoo", priceLabel: "gate price in research" },
+      { name: "Harvard Museum of Natural History", priceLabel: "gate price in research" },
+      { name: "Museum of Fine Arts", priceLabel: "gate price in research" },
+    ],
   },
   {
     id: "chicago",
@@ -72,15 +72,15 @@ const cityBlocks = [
     max: 5,
     note: "5 attractions including Shedd Aquarium and Skydeck, valid 9 days.",
     attractions: [
-      "Shedd Aquarium",
-      "Skydeck Chicago",
-      "Shoreline Sightseeing",
-      "Field Museum",
-      "360 Chicago",
-      "Griffin Museum of Science and Industry",
-      "Art Institute of Chicago",
-      "Adler Planetarium",
-    ].map((name) => ({ name, priceLabel: "gate price in research" })),
+      { name: "Shedd Aquarium", priceLabel: "gate price in research" },
+      { name: "Skydeck Chicago", priceLabel: "gate price in research" },
+      { name: "Shoreline Sightseeing", priceLabel: "gate price in research" },
+      { name: "Field Museum", priceLabel: "gate price in research" },
+      { name: "360 Chicago", value: 35, priceLabel: "from $35" },
+      { name: "Griffin Museum of Science and Industry", priceLabel: "gate price in research" },
+      { name: "Art Institute of Chicago", priceLabel: "gate price in research" },
+      { name: "Adler Planetarium", value: 25, priceLabel: "from $25" },
+    ],
   },
 ];
 
@@ -143,7 +143,7 @@ ${pageHero({
   crumbs: [{ href: "/", label: "Home" }, { href: "calculator.html", label: "Calculator" }],
   eyebrowText: "Calculator",
   title: "Would the pass actually save you money?",
-  lead: "Pick a city, the number of adults and the attractions you would visit. New York has verified gate prices; for the other cities, enter the gate price you see on the official ticket page and the calculator takes it from there.",
+  lead: "Pick a city, the number of adults and the attractions you would visit. New York has all gate prices verified; for the other cities we prefill the prices we have checked and let you enter the rest from the official ticket page.",
   meta: metaItems("4 cities", "Adults + total", "Savings in $ and %", "No email required"),
 })}
 
@@ -152,7 +152,7 @@ ${pageHero({
     <div class="calc" data-calc>
       <div class="calc__head">
         <h2>Build your list</h2>
-        <p class="muted">Pass prices are adult prices checked November 2026. New York gate prices are verified; for Philadelphia, Boston and Chicago, type the gate price you see on the official ticket page — we do not publish unverified prices.</p>
+        <p class="muted">Pass prices are adult prices checked November 2026. Some gate prices are verified (marked with a price); where we have none, type the figure from the official ticket page — we do not publish unverified numbers.</p>
       </div>
 
       <div class="calc__controls">
@@ -215,7 +215,7 @@ ${pageHero({
   <div class="container">
     ${sectionHead({ eyebrowText: "Questions", title: "Calculator questions", lead: "" })}
     ${faq([
-      { q: "Why do I have to enter prices for some cities?", a: "<p>Because we only publish gate prices we have checked ourselves. New York is fully checked; for Philadelphia, Boston and Chicago the pass price is verified, and you can type the gate price you see on the official ticket page to get the full saving.</p>" },
+      { q: "Why do I have to enter some prices myself?", a: "<p>Because we only publish gate prices we have checked ourselves. New York is fully checked; for Philadelphia, Boston and Chicago we prefill the prices we have verified and ask you to enter the rest from the official ticket page.</p>" },
       { q: "Does the calculator include children?", a: "<p>No. It uses adult prices and a number of adults. Child passes are cheaper and the break-even is usually lower, so do not reuse the adult result for a family with children.</p>" },
       { q: "What if I want more attractions than the pass covers?", a: "<p>Then the pass covers its limit and you pay the gate price for the extras. Add those extras separately to compare honestly.</p>" },
       { q: "When are the prices checked?", a: "<p>Pass prices and inclusions were checked in November 2026. Gate prices can change with dynamic pricing, especially at weekends and sunset slots.</p>" },
