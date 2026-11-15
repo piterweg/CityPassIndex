@@ -7,6 +7,13 @@
   const out = root.querySelector("[data-calc-result]");
   const blocks = [...root.querySelectorAll(".calc__city")];
 
+  // Consent Mode is configured in the layout; gtag drops events when analytics
+  // storage is denied, so these calls are safe before the user accepts.
+  const track = (name, params = {}) => {
+    if (typeof window.gtag === "function") window.gtag("event", name, params);
+  };
+  let lastResultKey = "";
+
   const money = (value) =>
     "$" + value.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -43,6 +50,7 @@
       block.hidden = block !== currentBlock();
     });
     resetBlock(currentBlock());
+    track("calculator_city_selected", { city: currentBlock().dataset.city });
     update();
   };
 
@@ -78,6 +86,19 @@
       const totalGate = gatePerPerson * people;
       const diff = totalGate - totalPass;
       const percent = totalGate > 0 ? (diff / totalGate) * 100 : 0;
+      const signature = `${block.dataset.city}|${count}|${people}|${names.join(",")}|${totalGate}`;
+      if (signature !== lastResultKey) {
+        lastResultKey = signature;
+        track("calculator_result", {
+          city: block.dataset.city,
+          people,
+          attractions: count,
+          pass_total: totalPass,
+          gate_total: totalGate,
+          savings: diff,
+          verdict: diff > 0 ? "pass_wins" : diff < 0 ? "direct_wins" : "break_even",
+        });
+      }
       const verdict =
         diff > 0
           ? `<p class="calc__verdict calc__verdict--win">The pass saves ${money(diff)}${people > 1 ? " for " + people + " adults" : ""} (${percent.toFixed(0)}%)</p>`
