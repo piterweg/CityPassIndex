@@ -30,3 +30,7 @@ Independent comparison of city tourist passes: verified pass prices, attraction 
 - llms.txt: https://citypassindex.com/llms.txt
 - About: https://citypassindex.com/about.html
 - Contact: https://citypassindex.com/contact.html
+## City mini-portals
+- Philadelphia: https://citypassindex.com/philadelphia-citypass.html · https://citypassindex.com/philadelphia-pass-worth-it.html · https://citypassindex.com/philadelphia-attractions.html
+- Boston: https://citypassindex.com/boston-citypass.html · https://citypassindex.com/boston-pass-worth-it.html · https://citypassindex.com/boston-attractions.html
+- Chicago: https://citypassindex.com/chicago-citypass.html · https://citypassindex.com/chicago-pass-worth-it.html · https://citypassindex.com/chicago-attractions.html

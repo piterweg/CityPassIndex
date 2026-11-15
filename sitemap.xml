@@ -7,6 +7,24 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://citypassindex.com/boston-attractions.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/boston-citypass.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/boston-pass-worth-it.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://citypassindex.com/boston.html</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -17,6 +35,24 @@
     <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/chicago-attractions.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/chicago-citypass.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/chicago-pass-worth-it.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://citypassindex.com/chicago.html</loc>
@@ -101,6 +137,24 @@
     <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/philadelphia-attractions.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/philadelphia-citypass.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://citypassindex.com/philadelphia-pass-worth-it.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://citypassindex.com/philadelphia.html</loc>

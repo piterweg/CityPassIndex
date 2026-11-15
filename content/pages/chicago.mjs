@@ -77,7 +77,7 @@ ${pageHero({
 
 <section class="section">
   <div class="container">
-    ${relatedGuides({ links: [{ kicker: "Compare", title: "Pass comparison", href: "passes.html", text: "CityPASS, Go City and New York Pass compared." }, { kicker: "Tool", title: "Break-even calculator", href: "calculator.html", text: "See when a pass stops paying off." }, { kicker: "Index", title: "All cities", href: "cities.html", text: "Which cities have checked data." }] })}
+    ${relatedGuides({ links: [{ kicker: "Review", title: "CityPASS review", href: "chicago-citypass.html", text: "Prices, tiers and what the pass covers." }, { kicker: "Decision", title: "Is it worth it?", href: "chicago-pass-worth-it.html", text: "Three scenarios with gate prices." }, { kicker: "Guide", title: "Attractions and prices", href: "chicago-attractions.html", text: "The full list, verified where possible." }] })}
 
 ${newsletter({ title: "One pass update a month", text: "Price changes and new city coverage, no spam.", source: "chicago" })}
   </div>

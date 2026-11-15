@@ -26,3 +26,14 @@
 - Cities without verified prices are marked "in research" rather than given placeholder numbers.
 - Downloadable data: https://citypassindex.com/data.html (CC BY 4.0, attribution City Pass Index).
 - Content signal: search=yes, ai-train=no.
+
+## City guides
+- https://citypassindex.com/philadelphia-citypass.html — Philadelphia CityPASS review
+- https://citypassindex.com/philadelphia-pass-worth-it.html — Philadelphia is it worth it?
+- https://citypassindex.com/philadelphia-attractions.html — Philadelphia attractions and prices
+- https://citypassindex.com/boston-citypass.html — Boston CityPASS review
+- https://citypassindex.com/boston-pass-worth-it.html — Boston is it worth it?
+- https://citypassindex.com/boston-attractions.html — Boston attractions and prices
+- https://citypassindex.com/chicago-citypass.html — Chicago CityPASS review
+- https://citypassindex.com/chicago-pass-worth-it.html — Chicago is it worth it?
+- https://citypassindex.com/chicago-attractions.html — Chicago attractions and prices
