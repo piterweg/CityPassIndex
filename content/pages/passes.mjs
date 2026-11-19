@@ -5,7 +5,7 @@ export default {
   navSection: "passes",
   bodyClass: "page-inner",
   title: "New York Tourist Passes Compared",
-  description: "CityPASS, Go City Explorer, Go City All-Inclusive, Essentials and New York Pass compared: prices, what they cover and who each one suits, checked November 2026.",
+  description: "CityPASS, Go City Explorer, Go City All-Inclusive and Essentials compared: prices, what they cover and who each one suits, checked November 2026.",
   priority: "0.9",
   changefreq: "monthly",
   ogImage: "assets/img/skyline-window-view.webp",
@@ -28,7 +28,6 @@ ${pageHero({
       ["<strong>Go City Explorer</strong>", "from $89", "2 choices, tiers up to 10", "A short trip with three or four paid sights"],
       ["<strong>Go City All-Inclusive</strong>", "from $169", "Unlimited entry, 1–10 days", "Someone out sightseeing every day"],
       ["<strong>Go City Essentials</strong>", "from $99", "1 observation deck + 2 attractions from 15", "One deck and two museums"],
-      ["<strong>New York Pass</strong>", "from $89", "100+ attractions, consecutive days", "A packed multi-day itinerary"],
     ] })}
   </div>
 </section>
@@ -40,7 +39,7 @@ ${pageHero({
       ${card({ kicker: "Short trip", title: "CityPASS", text: "Five attractions from ten, nine days. Break-even is about $30.20 per attraction, so it wins when your five are the expensive sights.", foot: `<a class="link-arrow" href="new-york.html">See the New York maths</a>` })}
       ${card({ kicker: "Build your own", title: "Go City Explorer", text: "Choose two to ten attractions and pay for the bundle. Better than CityPASS if you only want three or four paid sights.", foot: `<a class="link-arrow" href="calculator.html">Run your numbers</a>` })}
       ${card({ kicker: "Every day", title: "Go City All-Inclusive", text: "Starts at $169 for one day and rises with the number of days. Only worth it if you treat sightseeing as a full-time job.", foot: `<a class="link-arrow" href="calculator.html">Compare the maths</a>` })}
-      ${card({ kicker: "Consecutive days", title: "New York Pass", text: "One to ten consecutive days and 100+ attractions. Convenient, but it rewards quantity over quality.", foot: `<a class="link-arrow" href="calculator.html">Check the total</a>` })}
+      ${card({ kicker: "Fixed bundle", title: "Go City Essentials", text: "One observation deck plus two attractions from fifteen. The simplest pass to value up before buying.", foot: `<a class="link-arrow" href="calculator.html">Check the maths</a>` })}
     </div>
   </div>
 </section>
